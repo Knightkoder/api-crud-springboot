@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: TaskDemoCoopeuch
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/S3cret_db
+    username: S3cret_user
+    password: S3cret
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+springdoc:
+  api-docs:
+    path: /api-docs
